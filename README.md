@@ -3,7 +3,7 @@ Ceph_knowledgebase based on emails read on the Ceph mailing list and other sourc
 
 A repository of the things I learned about Ceph
 
-1.	Journal loss during operation means OSD loss. Total OSD loss, no recovery. CORRECTION:  Based on http://www.sebastien-han.fr/blog/2014/11/27/ceph-recover-osds-after-ssd-journal-failure/ it looks like you can recover the data after from an OSD after a "Journal on SSD" failure.
+1.	Journal loss during operation means OSD loss. Total OSD loss, no recovery. CORRECTION:  Based on http://www.sebastien-han.fr/blog/2014/11/27/ceph-recover-osds-after-ssd-journal-failure/ it looks like you can recover the data stored in an OSD after a "Journal on SSD" failure.
 
 2.	One SSD 200GB DC Intel 3700s can write close to 400MB/s, so having a 1:4 or even 1:5 SSD journal/SATA disk ratio is sensible, considering a SATA disk can write ~ 100 MB/s.
 
